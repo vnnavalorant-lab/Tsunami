@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "orangetsunami",
+  "version": "${version}",
+  "name": "Orange Tsunami",
+  "description": "Building Phase, Flooding Phase e Intermission Phase com tsunamis.",
+  "authors": [],
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.orangetsunami.OrangeTsunami"],
+    "client": ["com.orangetsunami.client.OrangeTsunamiClient"]
+  },
+  "mixins": ["orangetsunami.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
