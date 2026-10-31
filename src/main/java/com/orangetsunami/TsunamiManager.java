@@ -164,7 +164,7 @@ public final class TsunamiManager {
                 BlockState st = world.getBlockState(pos);
                 if (st.isOf(Blocks.WATER)) {
                     // já é água: apenas deixa passar
-                } else if (st.isAir() || st.getMaterial().isReplaceable()) {
+                } else if (st.isAir() || st.isReplaceable()) {
                     original.put(l, st);
                     set.add(l);
                     world.setBlockState(pos, Blocks.WATER.getDefaultState(), Block.NOTIFY_LISTENERS | Block.FORCE_STATE);
